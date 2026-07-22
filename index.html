@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>typing-speed-test-main</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="top-nav">
+                <picture>
+                    <source media="(max-width: 375px)" srcset="./images/logo-small.svg">
+                    <img src="./images/logo-large.svg" alt="Typing Speed Test">
+                </picture>
+              <div class="best">
+                    <img src="./images/icon-personal-best.svg" alt="" class="icon-best">
+                    <p>Personal best: <span>92 WPM</span></p>
+                </div>
+        </div>
+        <nav>
+            <ul class="score">
+                <li class="WPM">WPM: <span>40</span></li>
+                <li class="accueracy">Accueracy: <span>95%</span></li>
+                <li class="time">Time: <span>1:00</span></li>
+            </ul>
+          <div class="leftnav">
+
+    <!-- Difficulty -->
+    <ul class="levels desktop-options">
+        <p>Difficulty:</p>
+        <li data-level="easy">Easy</li>
+        <li data-level="medium">Medium</li>
+        <li class="hard" data-level="hard">Hard</li>
+    </ul>
+
+    <select class=" mobile-select difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard" selected>Hard</option>
+    </select>
+
+
+    <!-- Mode -->
+    <ul class="mode desktop-options">
+        <p>Mode:</p>
+        <li>Time <span>(60s)</span></li>
+        <li>Passage</li>
+    </ul>
+
+    <select class="mobile-select mode-select">
+        <option value="time" selected>Time (60s)</option>
+        <option value="passage">Passage</option>
+    </select>
+
+</div>
+        </nav>
+    </header>
+    </div>
+    <main>
+    <div class="typing-area">
+        <div id="text"></div>
+        <div class="restart">
+            <button>Restart Test <img src="./images/icon-restart.svg" alt=""></button>
+        </div>
+        <div class="shadow">
+            <button>Start Typing Test</button>
+            <p>Or click the text and start typing</p>
+        </div>
+        <input type="text" id="typingInput" autocomplete="off">
+    </div>
+    <div class="testComplete">
+        <img src="./images/icon-completed.svg" alt="" class="completed">
+        <h2>Test Complete</h2>
+        <p>Solid run.Keep pushing to beat your high score</p>
+        <ul class="result mode">
+            <li class="WPM">WPM: <span>40</span></li>
+            <li class="accueracy">Accueracy: <span>95%</span></li>
+            <li class="time">characters:
+                <div class="char"><span class="correct-char">0</span>/<span class="wrong-char">0</span></div>
+            </li>
+        </ul>
+        <button>Go again <i class="fa-solid fa-arrow-rotate-right"></i></button>
+        <img src="./images/pattern-star-1.svg" alt="" class="star1">
+        <img src="./images/pattern-star-2.svg" alt="" class="star2">
+    </div>
+    <div class="testComplete highScore">
+        <img src="./images/icon-new-pb.svg">
+        <h2>High Score Smashed!</h2>
+        <p>You're getting faster. that was incredible typing.</p>
+        <ul class="result mode">
+            <li class="WPM">WPM: <span>40</span></li>
+            <li class="accueracy">Accueracy: <span>95%</span></li>
+            <li class="time">characters:
+                <div class="char"><span class="correct-char">0</span>/<span class="wrong-char">0</span></div>
+            </li>
+        </ul>
+        <button>Go again <i class="fa-solid fa-arrow-rotate-right"></i></button>
+        <img src="./images/pattern-confetti.svg" >
+    </div>
+     <div class="testComplete baseline ">
+        <img src="./images/icon-completed.svg">
+        <h2>Baseline Established!</h2>
+        <p>You've set the bar. Now the real challenge begins-time to beat it.</p>
+        <ul class="result mode">
+            <li class="WPM">WPM: <span>40</span></li>
+            <li class="accueracy">Accueracy: <span>95%</span></li>
+            <li class="time">characters:
+                <div class="char"><span class="correct-char">0</span>/<span class="wrong-char">0</span></div>
+            </li>
+        </ul>
+        <button>Beat This Score <i class="fa-solid fa-arrow-rotate-right"></i></button>
+        <img src="./images/pattern-star-1.svg" alt="" class="star1">
+        <img src="./images/pattern-star-2.svg" alt="" class="star2">
+    </div>
+</main>
+    
+   <script src="./index.js"></script> 
+</body>
+</html>
